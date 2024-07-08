@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Gowun_Dodum } from "next/font/google";
 import "./globals.css";
 
-import Header from "../components/Header";
+import Header from "./components/Header";
+import TopButton from "./components/TopButton";
 
-const inter = Inter({ subsets: ["latin"] });
+const gowunDodum = Gowun_Dodum({
+  subsets: ["latin"],
+  weight: "400"
+});
 
 export const metadata: Metadata = {
   title: "Next Quiz App",
@@ -18,15 +22,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className="bg-gray-50">
-        <div className="bg-slate-200 max-w-7xl mx-auto  shadow-xl  border-1 min-h-[52rem] border-gray-600">
-          <Header />
+      <body className={gowunDodum.className + " bg-slate-200 min-h-[100vh] max-w-full flex flex-col justify-between"}>
+        <Header />
 
-          {children}
-          
-        </div>
-        <footer className="max-w-7xl mx-auto bg-orange-500 p-10 text-center text-slate-200">
-          Footer
+        {children}
+
+        <TopButton />
+
+        <footer className="w-full mx-auto bg-emerald-600 p-6 text-center text-slate-200">
+          Quiz &copy; <a href="https://quizapi.io/" target="_blank">QuizAPI</a>
         </footer>
       </body>
     </html>
