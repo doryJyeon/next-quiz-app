@@ -1,6 +1,5 @@
 import React from 'react'
 import Questions from '../components/Questions';
-import ReloadBtn from '../components/ReloadBtn';
 
 const QuestionPage = () => {
   const category = "Code";

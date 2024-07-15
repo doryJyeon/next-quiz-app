@@ -1,7 +1,7 @@
 
 export default function Home() {
   return (
-    <section className="max-w-7xl overflow-hidden rounded-xl p-4 lg:p-8 text-slate-700 flex items-center justify-center">
+    <section className="max-w-7xl overflow-hidden rounded-xl p-4 lg:p-8 text-slate-700 flex items-center justify-center mx-auto">
       <article className="bg-slate-100 rounded-xl shadow p-10 text-sm sm:text-lg">
         <p className="text-center mb-[-10px]">
           <span className="text-2xl sm:text-6xl sm:mr-2 text-emerald-400">Q.</span>

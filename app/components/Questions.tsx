@@ -39,14 +39,15 @@ const Questions: React.FC<Props> = ({ category, tags, isCategory }) => {
     <ul>
       {loading ? (
         <MessageCard message={"Loading..."} />
-      ) : loading || questions.length < 1 ? (
-        <MessageCard message={"emtpy question!"} />
       ) : (
         <>
-          {questions.map((question, index) => (
-            <Question question={question} key={index} />
-          ))}
-
+          {questions.length < 1 ? (
+            <MessageCard message={"emtpy question!"} />
+          ) : (
+            questions.map((question, index) => (
+              <Question question={question} key={index} />
+            ))
+          )}
           <ReloadBtn />
         </>
       )}

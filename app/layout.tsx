@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={gowunDodum.className + " bg-slate-200 min-h-[100vh] max-w-full flex flex-col justify-between"}>
+      <body className={gowunDodum.className + " bg-slate-200 min-h-[100vh] min-w-full flex flex-col justify-between"}>
         <Header />
 
         {children}
