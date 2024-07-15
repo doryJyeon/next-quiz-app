@@ -20,8 +20,6 @@ const Questions: React.FC<Props> = ({ category, tags, isCategory }) => {
 
   const fetchQuestions = async () => {
     setLoading(true);
-    const apiKey = process.env.QUIZ_API_KEY;
-    console.log(apiKey)
     try {
       const response = await fetch(`/api/quiz?category=${categoryEncode + tagsEncode}`);
       const data = await response.json();
