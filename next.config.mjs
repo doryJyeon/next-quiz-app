@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
-    QUIZ_API_KEY: process.env.QUIZ_API_KEY,
+    QUIZ_API_KEY: process.env.NEXT_PUBLIC_QUIZ_API_KEY,
   },
 };
 

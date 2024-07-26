@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 export async function GET(
   req: NextRequest
 ) {
-  const apiKey = process.env.QUIZ_API_KEY; // 환경 변수 API 키 설정
+  const apiKey = process.env.NEXT_PUBLIC_QUIZ_API_KEY; // 환경 변수 API 키 설정
 
   // category 필수. searchParams도 무조건 있어야함
   const { searchParams } = new URL(req.url!);
