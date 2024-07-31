@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import MessageCard from "./MessageCard";
 import Question from "./Question";
 import ReloadBtn from "./ReloadBtn";
@@ -40,7 +40,7 @@ const Questions: React.FC<Props> = ({ category, tags, isCategory }) => {
       {loading ? (
         <MessageCard message={"Loading..."} />
       ) : (
-        <>
+        <Suspense>
           {questions.length < 1 ? (
             <MessageCard message={"emtpy question!"} />
           ) : (
@@ -49,7 +49,7 @@ const Questions: React.FC<Props> = ({ category, tags, isCategory }) => {
             ))
           )}
           <ReloadBtn />
-        </>
+        </Suspense>
       )}
     </ul>
   );
