@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import Questions from '../components/Questions';
 
 const QuestionPage = () => {
@@ -7,7 +7,9 @@ const QuestionPage = () => {
 
   return (
     <div className="flex flex-col space-y-4 md:space-y-8 p-4 lg:p-8">
-      <Questions category={category} tags={tags} />
+      <Suspense>
+        <Questions category={category} tags={tags} />
+      </Suspense>
     </div>
   )
 }
