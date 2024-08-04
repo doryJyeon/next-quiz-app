@@ -14,5 +14,5 @@ Pc / Tablet / Mobile
 ![answer-check](https://github.com/user-attachments/assets/9b2b821d-61ed-4b3d-a169-b3c4bd6498ba)<br />
 퀴즈는 영어로 제공되며 답 선택 후 제공되는 버튼을 통해 즉시 정답 확인이 가능합니다.
 
-* category <br />![image](https://github.com/user-attachments/assets/06f55835-a96d-4a65-9303-75bf9320e3c0)
-* tags <br />![image](https://github.com/user-attachments/assets/41c35b7d-08ec-4914-b699-a96472fead95)
+* category <br />![image](https://github.com/user-attachments/assets/38cd5810-331f-43a2-be12-cf0e4f8692fa)
+* tags <br />![image](https://github.com/user-attachments/assets/3e69bc3a-36c0-4be3-8095-53516f4c96a8)
