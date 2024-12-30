@@ -1,9 +1,26 @@
 # Next Quiz App 
 
-[사이트 이동](https://jyeon-next-quiz-app.vercel.app/)
+[구현 사이트 이동](https://jyeon-next-quiz-app.vercel.app/)
 
-Next14<br />
+Next14  
 Pc / Tablet / Mobile
+
+## 실행 방법
+#### APIKEY 추가
+실행 전 [QuizAPI](https://quizapi.io/register)에서 APIKEY 발급 후 /.env에 추가가 필요합니다.
+```
+// /.env 파일
+NEXT_PUBLIC_QUIZ_API_KEY = "YOUR KEY"
+```
+#### 실행
+```
+// npm install
+npm i
+npm run dev
+
+// localhost 접속
+localhost:3000
+```
 
 ## 구현 화면
 ### Info
